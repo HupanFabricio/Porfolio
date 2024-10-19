@@ -1,1 +1,1 @@
-export * from "./Cover-Particles";
+export { default as Navbar } from "./Navbar.astro";
