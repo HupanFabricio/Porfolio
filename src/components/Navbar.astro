@@ -6,14 +6,14 @@ import { itemsNavbar } from "../../data";
 	class="fixed z-40 flex flex-col items-center justify-center w-full mt-auto h-max bottom-10">
 	<nav>
 		<div
-			class="flex items-center justify-center gap-2 px-4 py-1 rounded-full bg-white/15 backdrop-blur-sm">
+			class="items-center flex justify-center gap-2 px-4 py-1 rounded-full bg-white/15 backdrop-blur-sm">
 			{
 				itemsNavbar.map((item) => {
 					const Icon = item.icon;
 					return (
 						<div
 							id={item.title}
-							class="px-3 py-2 transition duration-200 rounded-full cursor-pointer hover:bg-secondary">
+							class=" transition py-2 duration-200 px-3 rounded-full cursor-pointer hover:bg-secondary">
 							<Icon />
 						</div>
 					);
@@ -22,6 +22,3 @@ import { itemsNavbar } from "../../data";
 		</div>
 	</nav>
 </div>
-<script define:vars={{ itemsNavbar }}>
-	console.log("Items del navbar (cliente):", itemsNavbar);
-</script>
