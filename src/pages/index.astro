@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { CoverParticles } from '../utils';
+import { Experience, SectionContainer } from '../components';
 ---
 
 <Layout
@@ -8,7 +9,9 @@ import { CoverParticles } from '../utils';
     description="Contrata a c0d3fabri para crear tu aplicacion web. Desarrollador Web. Especializado en crear aplicaciones unicas."
 >
     <main class="h-full min-h-[100vh] bg-gradient-cover bg-no-repeat">
-        <h1 class="text-2xl">PORFOLIO</h1>
         <CoverParticles client:load />
+        <SectionContainer id="experiencia">
+            <Experience />
+        </SectionContainer>
     </main>
 </Layout>
