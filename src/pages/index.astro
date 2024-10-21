@@ -1,15 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { CoverParticles } from '../utils';
-import { Experience, SectionContainer } from '../components';
+import { About, Experience, SectionContainer } from '../components';
 ---
 
 <Layout
     title="Porfolio de c0d3fabri - Desarrollador y Programador Web."
     description="Contrata a c0d3fabri para crear tu aplicacion web. Desarrollador Web. Especializado en crear aplicaciones unicas."
 >
-    <main class="h-full min-h-[100vh] bg-gradient-cover bg-no-repeat">
+    <main
+        class="flex h-full min-h-[100vh] flex-col gap-y-4 bg-gradient-cover bg-no-repeat"
+    >
         <CoverParticles client:load />
+        <SectionContainer id="experiencia">
+            <About />
+        </SectionContainer>
+
         <SectionContainer id="experiencia">
             <Experience />
         </SectionContainer>

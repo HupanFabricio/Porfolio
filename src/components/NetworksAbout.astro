@@ -1,0 +1,23 @@
+---
+import { networksData } from '../../data';
+import { ArrowUpRight } from '../icons';
+---
+
+<div class="flex flex-row gap-4">
+    {
+        networksData.map((network) => {
+            const Icon = network.icon;
+            return (
+                <a
+                    title={network.title}
+                    href={network.to}
+                    target="_blank"
+                    class="group cursor-pointer transition duration-500 hover:bg-secondary"
+                >
+                    <Icon class="size-8 stroke-[1.2] group-hover:hidden" />
+                    <ArrowUpRight class="hidden size-8 stroke-[1.2] group-hover:block" />
+                </a>
+            );
+        })
+    }
+</div>

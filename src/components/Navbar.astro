@@ -14,7 +14,8 @@ import { itemsNavbar } from '../../data';
                     const Icon = item.icon;
                     return (
                         <a
-                            href={`#${item.title}`}
+                            title={item.title}
+                            href={item.to}
                             class="cursor-pointer rounded-full px-3 py-2 transition duration-75 hover:bg-secondary"
                         >
                             <Icon />

@@ -1,14 +1,15 @@
 ---
 interface Props {
     id: string;
+    class?: string;
 }
 
-const { id } = Astro.props;
+const { id, class: className } = Astro.props;
 ---
 
 <section
     id={id}
-    class="mx-2 rounded-md bg-gray-300/10 p-2 lg:mx-auto lg:max-w-[740px]"
+    class={`relative mx-auto w-full lg:max-w-[740px] ${className}`}
 >
     <slot />
 </section>
