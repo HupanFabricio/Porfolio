@@ -35,23 +35,25 @@ export const itemsNavbar: NavbarItem[] = [
 
 export const experienceData: ExperienceItem[] = [
     {
-        date: 'April 2022',
-        title: 'Ecommerce UI code in Tailwind CSS',
+        date: '...Actualmente',
+        title: 'Alemshop - Ecommerce fullstack',
         description:
-            'Get started with donzens of web componentes and interactive elements built on top of Tailwind CSS.',
+            'Creación de una plataforma de comercio electrónico desde cero, integrando pasarelas de pago, servicios de correo, gestión de inventarios, entre otros. Este proyecto ha sido una experiencia en la que me he sentido muy cómodo y satisfecho con el resultado final.',
         link: 'https://alemshop.com.ar/'
     },
     {
         date: 'April 2022',
-        title: 'Ecommerce UI code in Tailwind CSS',
+        title: 'Reacondicionamiento landing page - Ecommerce',
         description:
-            'Get started with donzens of web componentes and interactive elements built on top of Tailwind CSS.'
+            'Marketing básico enfocado en la publicidad y venta de materiales de construcción. Colaboré activamente en el desarrollo del diseño, aportando ideas creativas y estratégicas para mejorar la visibilidad y efectividad de las campañas publicitarias.',
+        link: 'https://corralonruzak.com.ar/'
     },
     {
-        date: 'April 2022',
-        title: 'Ecommerce UI code in Tailwind CSS',
+        date: 'Feb 2021',
+        title: 'Landing page - Calderas',
         description:
-            'Get started with donzens of web componentes and interactive elements built on top of Tailwind CSS.'
+            'Desarrollado con el objetivo de publicitar los servicios y facilitar la contratación de la empresa. Mi trabajo en este proyecto incluyó la optimización de imágenes y la colaboración en la implementación del diseño responsive.',
+        link: 'https://calderasboiko.com.ar/'
     }
 ];
 

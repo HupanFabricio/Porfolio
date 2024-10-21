@@ -5,14 +5,9 @@ export default {
    theme: {
       extend: {
          colors: {
-            secondary: '#f5741c',
+            secondary: '#9A8CE8',
             darkBg: '#131424'
          },
-         backgroundImage: {
-            "gradient-cover":
-               "linear-gradient(90.21deg,rgba(170,54,124, 0.65) -5.91%, rgba(74, 47, 189, 0.5) 111.58%)"
-
-         }
       },
    },
    plugins: [],

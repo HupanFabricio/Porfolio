@@ -4,19 +4,18 @@ import type { ExperienceItem } from '../types/interfaces';
 const { title, description, link, date } = Astro.props as ExperienceItem;
 ---
 
-<li class="mb-4 ms-6">
+<li class="ms-6">
     <div
-        class="absolute -start-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"
+        class="absolute -start-1.5 h-3 w-3 rounded-full border border-white bg-secondary"
     >
     </div>
-    <time
-        class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+    <time class="mb-1 text-sm font-normal leading-none text-gray-300/80"
         >{date}</time
     >
-    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+    <h3 class="mb-2 text-lg font-semibold text-secondary">
         {title}
     </h3>
-    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+    <p class="mb-4 text-pretty text-base font-normal text-gray-300/80">
         {description}
     </p>
 
@@ -25,7 +24,7 @@ const { title, description, link, date } = Astro.props as ExperienceItem;
             <a
                 href={link}
                 target="_blank"
-                class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+                class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-secondary focus:z-10 focus:text-secondary focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
             >
                 Saber mas...{' '}
                 <svg
