@@ -2,44 +2,55 @@
 import { AviableBtn, NetworksAbout } from '../components';
 ---
 
-<div
-    aria-label="Home"
-    class="box-gen group pointer-events-auto block w-16 rounded-full bg-zinc-100 object-cover p-0.5 dark:bg-zinc-800"
->
-    <img
-        alt="Avatar Fabricio Natael Hupan"
-        fetchpriority="high"
-        width="256"
-        height="256"
-        decoding="async"
-        data-nimg="1"
-        class="w-16 rounded-full bg-zinc-100 object-cover group-hover:hidden dark:bg-zinc-800"
-        srcset="/avatar.webp 1x, /avatar.webp 2x"
-        src="/avatar.webp"
-        style="color: transparent;"
-    /><img
-        alt="Avatar Fabricio Natael Hupan"
-        fetchpriority="high"
-        width="256"
-        height="256"
-        decoding="async"
-        data-nimg="1"
-        class="hidden w-16 rounded-full bg-zinc-100 object-cover group-hover:flex dark:bg-zinc-800"
-        srcset="/avatarhover.webp 1x, /avatarhover.webp 2x"
-        src="/avatarhover.webp"
-        style="color: transparent;"
-    />
-</div>
-<div>
-    <h1 class="mt-2 text-4xl font-bold">c0d3fabri</h1>
-    <p>
-        <span class="opacity-95"> Soy diseñador web </span>
-        <span> fullstack. </span>
-    </p>
-    <p class="opacity-80">
-        Actualmente me encuentro trabajando como freelancer por cuenta propia
-    </p>
-</div>
-<AviableBtn text="Disponibilidad fulltime" />
+<div class="flex flex-row items-center gap-x-4">
+    <div>
+        <div
+            aria-label="Home"
+            class="box-gen group pointer-events-auto block w-16 rounded-full bg-zinc-100 object-cover p-0.5 dark:bg-zinc-800"
+        >
+            <img
+                alt="Avatar Fabricio Natael Hupan"
+                fetchpriority="high"
+                width="256"
+                height="256"
+                decoding="async"
+                data-nimg="1"
+                class="w-16 rounded-full bg-zinc-100 object-cover group-hover:hidden dark:bg-zinc-800"
+                srcset="/avatar.webp 1x, /avatar.webp 2x"
+                src="/avatar.webp"
+                style="color: transparent;"
+            /><img
+                alt="Avatar Fabricio Natael Hupan"
+                fetchpriority="high"
+                width="256"
+                height="256"
+                decoding="async"
+                data-nimg="1"
+                class="hidden w-16 rounded-full bg-zinc-100 object-cover group-hover:flex dark:bg-zinc-800"
+                srcset="/avatarhover.webp 1x, /avatarhover.webp 2x"
+                src="/avatarhover.webp"
+                style="color: transparent;"
+            />
+        </div>
+        <div>
+            <h1 class="mt-2 text-4xl font-bold">c0d3fabri</h1>
+            <p>
+                <span class="opacity-80"> Soy diseñador web </span>
+                <span class="font-bold"> fullstack. </span>
+            </p>
+            <p>
+                <span class="opacity-80"
+                    >Actualmente me encuentro trabajando como</span
+                >
+                <span>freelancer,</span>
+                <span class="opacity-80">por cuenta propia</span>
+            </p>
+        </div>
+    </div>
 
-<NetworksAbout />
+    <div class="mt-2 flex flex-col items-center gap-y-3">
+        <AviableBtn text="Disponibilidad fulltime" />
+
+        <NetworksAbout />
+    </div>
+</div>
