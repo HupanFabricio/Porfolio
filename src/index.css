@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* BUTONS */
+    .bg-container {
+        @apply rounded-md bg-gray-300/10 px-2 py-4 backdrop-blur-sm;
+    }
+}
