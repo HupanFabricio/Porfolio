@@ -1,0 +1,55 @@
+---
+import { NavigateIcon } from '../icons';
+import type { ProyectItem } from '../types/interfaces';
+
+const { description, skillsIcons, title, src, url, background } =
+    Astro.props as ProyectItem;
+---
+
+<a
+    href={url}
+    class="group relative h-[250px] w-full cursor-pointer overflow-hidden rounded-md"
+    style={`background-color: ${background};`}
+>
+    <div
+        class="absolute inset-0 z-10 flex items-center p-5 transition-all duration-300 ease-out lg:group-hover:pl-0 lg:group-hover:opacity-0"
+    >
+        <div class="flex flex-col gap-y-2">
+            <span class="max-w-[13ch] text-2xl font-bold">{title}</span><p
+                class="mb-2 w-[30ch]"
+            >
+                {description}
+            </p>
+            <div class="flex gap-x-2">
+                {
+                    skillsIcons.map((skill) => {
+                        const Icon = skill.icon;
+                        return (
+                            <div
+                                title={skill.tecnology}
+                                class="flex items-center gap-x-1"
+                            >
+                                <div class="grid h-8 w-8 place-content-center rounded-full bg-black/50">
+                                    <Icon class="block size-5 stroke-[1.3]" />
+                                </div>
+                            </div>
+                        );
+                    })
+                }
+            </div>
+        </div>
+    </div><img
+        class="absolute right-5 w-[250px] transition-all duration-700 ease-out lg:group-hover:h-auto lg:group-hover:w-[500px]"
+        src={src}
+        alt={`Photo ${title}`}
+        style="transform: none;"
+    /><div
+        class="relative right-10 aspect-square h-full transition-all duration-700 ease-out lg:group-hover:right-[500px]"
+        style={`background: linear-gradient(to right, ${background}, transparent); transform: none;`}
+    >
+    </div>
+
+    <NavigateIcon
+        class="absolute right-5 top-5 z-10 scale-0 transition-all duration-500 lg:group-hover:scale-100"
+    />
+</a>

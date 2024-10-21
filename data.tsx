@@ -1,4 +1,8 @@
-import type { NavbarItem, ExperienceItem } from './src/types/interfaces';
+import type {
+    NavbarItem,
+    ExperienceItem,
+    ProyectItem
+} from './src/types/interfaces';
 import {
     HomeIcon,
     CodeIcon,
@@ -7,7 +11,8 @@ import {
     GithubIcon,
     InstagramIcon,
     LinkedinIcon,
-    MailIcon
+    MailIcon,
+    TailwindcssIcon
 } from './src/icons';
 
 export const itemsNavbar: NavbarItem[] = [
@@ -80,4 +85,41 @@ export const networksData: NavbarItem[] = [
     }
     //Linkedin
     //Correo
+];
+
+export const proyectsData: ProyectItem[] = [
+    {
+        title: 'Calculadora',
+        description: 'Proyecto basico',
+        skillsIcons: [
+            {
+                tecnology: 'Tailwindcss',
+                icon: TailwindcssIcon
+            },
+            {
+                tecnology: 'code',
+                icon: CodeIcon
+            }
+        ],
+        src: '/p1.webp',
+        url: '/ss',
+        background: '#D95BAF'
+    },
+    {
+        title: 'Calculadora',
+        description: 'Proyecto 2',
+        skillsIcons: [
+            {
+                tecnology: 'Tailwindcss',
+                icon: TailwindcssIcon
+            },
+            {
+                tecnology: 'React',
+                icon: HomeIcon
+            }
+        ],
+        src: '/p2.webp',
+        url: '/ss',
+        background: '#755cde'
+    }
 ];

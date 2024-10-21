@@ -1,0 +1,16 @@
+---
+import { proyectsData } from '../../data';
+import { ProyectItem } from '../components';
+import { CodeIcon } from '../icons';
+---
+
+<h2
+    class="leading-0 mb-2 flex w-full flex-row items-start gap-x-2 text-2xl font-semibold"
+>
+    <CodeIcon class="size-7" />Proyectos
+</h2>
+<div class="bg-container w-full p-4">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+        {proyectsData.map((proyect) => <ProyectItem {...proyect} />)}
+    </div>
+</div>
