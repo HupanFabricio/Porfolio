@@ -12,7 +12,8 @@ import {
     InstagramIcon,
     LinkedinIcon,
     MailIcon,
-    TailwindcssIcon
+    TailwindcssIcon,
+    ReactIcon
 } from './src/icons';
 
 export const itemsNavbar: NavbarItem[] = [
@@ -97,6 +98,10 @@ export const proyectsData: ProyectItem[] = [
                 icon: TailwindcssIcon
             },
             {
+                tecnology: 'React',
+                icon: ReactIcon
+            },
+            {
                 tecnology: 'code',
                 icon: CodeIcon
             }
@@ -115,7 +120,7 @@ export const proyectsData: ProyectItem[] = [
             },
             {
                 tecnology: 'React',
-                icon: HomeIcon
+                icon: ReactIcon
             }
         ],
         src: '/p2.webp',
