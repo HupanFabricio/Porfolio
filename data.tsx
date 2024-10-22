@@ -51,15 +51,15 @@ export const experienceData: ExperienceItem[] = [
         date: 'April 2022',
         title: 'Reacondicionamiento landing page - Ecommerce',
         description:
-            'Marketing básico enfocado en la publicidad y venta de materiales de construcción. Colaboré activamente en el desarrollo del diseño, aportando ideas creativas y estratégicas para mejorar la visibilidad y efectividad de las campañas publicitarias.',
-        link: 'https://corralonruzak.com.ar/'
+            'Marketing básico enfocado en la publicidad y venta de materiales de construcción. Colaboré activamente en el desarrollo del diseño, aportando ideas creativas y estratégicas para mejorar la visibilidad y efectividad de las campañas publicitarias.'
+        //   link: 'https://corralonruzak.com.ar/'
     },
     {
         date: 'Feb 2021',
         title: 'Landing page - Calderas',
         description:
-            'Desarrollado con el objetivo de publicitar los servicios y facilitar la contratación de la empresa. Mi trabajo en este proyecto incluyó la optimización de imágenes y la colaboración en la implementación del diseño responsive.',
-        link: 'https://calderasboiko.com.ar/'
+            'Desarrollado con el objetivo de publicitar los servicios y facilitar la contratación de la empresa. Mi trabajo en este proyecto incluyó la optimización de imágenes y la colaboración en la implementación del diseño responsive.'
+        //   link: 'https://calderasboiko.com.ar/'
     }
 ];
 
