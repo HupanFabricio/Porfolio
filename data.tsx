@@ -17,18 +17,13 @@ import {
 } from './src/icons';
 
 export const itemsNavbar: NavbarItem[] = [
+    //  {
+    //      to: '#top',
+    //      title: 'home',
+    //      icon: HomeIcon
+    //  },
     {
         to: '#top',
-        title: 'home',
-        icon: HomeIcon
-    },
-    {
-        to: '#proyectos',
-        title: 'proyectos',
-        icon: CodeIcon
-    },
-    {
-        to: '#sobre-mi',
         title: 'sobre-mi',
         icon: UserIcon
     },
@@ -36,6 +31,11 @@ export const itemsNavbar: NavbarItem[] = [
         to: '#experiencia',
         title: 'experiencia',
         icon: BookIcon
+    },
+    {
+        to: '#proyectos',
+        title: 'proyectos',
+        icon: CodeIcon
     }
 ];
 
