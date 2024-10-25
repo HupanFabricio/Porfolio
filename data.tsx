@@ -90,7 +90,7 @@ export const networksData: NavbarItem[] = [
 
 export const proyectsData: ProyectItem[] = [
     {
-        title: 'Calculadora',
+        title: 'Prueba Card',
         description: 'Proyecto basico',
         skillsIcons: [
             {
