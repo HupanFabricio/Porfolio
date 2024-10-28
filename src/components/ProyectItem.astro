@@ -39,17 +39,19 @@ const { description, skillsIcons, title, src, url, background } =
             </div>
         </div>
     </div><img
-        class="absolute right-5 w-[250px] transition-all duration-700 ease-out lg:group-hover:h-auto lg:group-hover:w-[500px]"
+        class="absolute right-0 h-full w-full object-cover object-center transition-all duration-700 ease-out lg:group-hover:w-[500px]"
         src={src}
         alt={`Photo ${title}`}
         style="transform: none;"
     /><div
-        class="relative right-10 aspect-square h-full transition-all duration-700 ease-out lg:group-hover:right-[500px]"
+        class="relative right-10 aspect-square h-full bg-cover transition-all duration-700 ease-out lg:group-hover:right-[500px]"
         style={`background: linear-gradient(to right, ${background}, transparent); transform: none;`}
     >
     </div>
 
-    <NavigateIcon
-        class="absolute right-5 top-5 z-10 scale-0 transition-all duration-500 lg:group-hover:scale-100"
-    />
+    <div
+        class="absolute right-4 top-4 z-10 aspect-square scale-0 rounded-md bg-secondary/30 p-2 transition-all duration-500 lg:group-hover:scale-100"
+    >
+        <NavigateIcon />
+    </div>
 </a>

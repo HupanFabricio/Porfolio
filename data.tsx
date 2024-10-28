@@ -13,7 +13,10 @@ import {
     LinkedinIcon,
     MailIcon,
     TailwindcssIcon,
-    ReactIcon
+    ReactIcon,
+    NextJsIcon,
+    SupabaseIcon,
+    TypeScriptIcon
 } from './src/icons';
 
 export const itemsNavbar: NavbarItem[] = [
@@ -90,6 +93,35 @@ export const networksData: NavbarItem[] = [
 
 export const proyectsData: ProyectItem[] = [
     {
+        title: 'X-clone',
+        description: 'Actualmente... ',
+        skillsIcons: [
+            {
+                tecnology: 'NextJS',
+                icon: NextJsIcon
+            },
+            {
+                tecnology: 'React',
+                icon: ReactIcon
+            },
+            {
+                tecnology: 'Supabase',
+                icon: SupabaseIcon
+            },
+            {
+                tecnology: 'Typescript',
+                icon: TypeScriptIcon
+            },
+            {
+                tecnology: 'Tailwindcss',
+                icon: TailwindcssIcon
+            }
+        ],
+        src: '/x-logotipo.avif',
+        url: '/ss',
+        background: '#000000'
+    },
+    {
         title: 'Prueba Card',
         description: 'Proyecto basico',
         skillsIcons: [
@@ -106,25 +138,8 @@ export const proyectsData: ProyectItem[] = [
                 icon: CodeIcon
             }
         ],
-        src: '/p1.webp',
-        url: '/ss',
-        background: '#D95BAF'
-    },
-    {
-        title: 'Calculadora',
-        description: 'Proyecto 2',
-        skillsIcons: [
-            {
-                tecnology: 'Tailwindcss',
-                icon: TailwindcssIcon
-            },
-            {
-                tecnology: 'React',
-                icon: ReactIcon
-            }
-        ],
-        src: '/p2.webp',
-        url: '/ss',
-        background: '#755cde'
+        src: '/AlemShop-Ecommerce.png',
+        url: 'https://alemshop.com.ar/',
+        background: '#6734A0'
     }
 ];
