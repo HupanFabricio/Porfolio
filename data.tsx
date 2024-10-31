@@ -93,8 +93,30 @@ export const networksData: NavbarItem[] = [
 
 export const proyectsData: ProyectItem[] = [
     {
+        title: 'Alemshop',
+        description: 'Ecommerce',
+        skillsIcons: [
+            {
+                tecnology: 'Tailwindcss',
+                icon: TailwindcssIcon
+            },
+            {
+                tecnology: 'React',
+                icon: ReactIcon
+            },
+            {
+                tecnology: 'code',
+                icon: CodeIcon
+            }
+        ],
+        src: '/AlemShop-Ecommerce.png',
+        url: 'https://alemshop.com.ar/',
+        background: '#6734A0'
+    },
+    {
         title: 'X-clone',
-        description: 'Actualmente... ',
+        description: `Prueba NextJs.\n
+         :( para nada a gusto!`,
         skillsIcons: [
             {
                 tecnology: 'NextJS',
@@ -118,28 +140,7 @@ export const proyectsData: ProyectItem[] = [
             }
         ],
         src: '/x-logotipo.avif',
-        url: '/ss',
+        url: 'https://github.com/HupanFabricio/x-clone',
         background: '#000000'
-    },
-    {
-        title: 'Prueba Card',
-        description: 'Proyecto basico',
-        skillsIcons: [
-            {
-                tecnology: 'Tailwindcss',
-                icon: TailwindcssIcon
-            },
-            {
-                tecnology: 'React',
-                icon: ReactIcon
-            },
-            {
-                tecnology: 'code',
-                icon: CodeIcon
-            }
-        ],
-        src: '/AlemShop-Ecommerce.png',
-        url: 'https://alemshop.com.ar/',
-        background: '#6734A0'
     }
 ];
