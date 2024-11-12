@@ -115,8 +115,7 @@ export const proyectsData: ProyectItem[] = [
     },
     {
         title: 'X-clone',
-        description: `Prueba NextJs.\n
-         :( para nada a gusto!`,
+        description: `Prueba NextJs.`,
         skillsIcons: [
             {
                 tecnology: 'NextJS',
