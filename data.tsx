@@ -16,7 +16,9 @@ import {
     ReactIcon,
     NextJsIcon,
     SupabaseIcon,
-    TypeScriptIcon
+    TypeScriptIcon,
+    ExpoIcon,
+    TanstackIcon
 } from './src/icons';
 
 export const itemsNavbar: NavbarItem[] = [
@@ -107,6 +109,10 @@ export const proyectsData: ProyectItem[] = [
             {
                 tecnology: 'code',
                 icon: CodeIcon
+            },
+            {
+                tecnology: 'TanStack',
+                icon: TanstackIcon
             }
         ],
         src: '/AlemShop-Ecommerce.png',
@@ -140,6 +146,31 @@ export const proyectsData: ProyectItem[] = [
         ],
         src: '/x-logotipo.avif',
         url: 'https://github.com/HupanFabricio/x-clone',
+        background: '#000000'
+    },
+    {
+        title: 'SpotEvent',
+        description: `App mobile, eventos cercanos a tí`,
+        skillsIcons: [
+            {
+                tecnology: 'TanStack',
+                icon: TanstackIcon
+            },
+            {
+                tecnology: 'React Native',
+                icon: ExpoIcon
+            },
+            {
+                tecnology: 'Typescript',
+                icon: TypeScriptIcon
+            },
+            {
+                tecnology: 'Tailwindcss',
+                icon: TailwindcssIcon
+            }
+        ],
+        src: '/Logotipo-SpotEvent.jpg',
+        url: 'https://github.com/HupanFabricio/SpotEvent',
         background: '#000000'
     }
 ];
